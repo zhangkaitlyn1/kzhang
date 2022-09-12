@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments for EPPS 6356",
+    "section": "",
+    "text": "Code\n\n\nR\n\n\nArt\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2022\n\n\nLeonard Ayala\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2022\n\n\nLeonard\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/EPPS6356 - 1/index.html",
+    "href": "posts/EPPS6356 - 1/index.html",
+    "title": "Assignment 1: Generative Art, Fall Leaf, and Chart Critique",
+    "section": "",
+    "text": "The page features stunning examples of generative art.\nFigure 1 is a piece by Perumal, Pavi, Nikhil and Nikita.\n\n\n\nFigure 1: umbrella by various\n\n\n\n\n\nFigure 2 Espen Kluge\n\n\n\nFigure 2: portrait by Espen Kluge\n\n\n\n\n\nFigure 3 by Dian Fen\n\n\n\nFigure 3: abyss by Dian Fen"
+  },
+  {
+    "objectID": "posts/EPPS6356 - 1/index.html#fall-color",
+    "href": "posts/EPPS6356 - 1/index.html#fall-color",
+    "title": "Assignment 1: Generative Art, Fall Leaf, and Chart Critique",
+    "section": "2. Fall Color",
+    "text": "2. Fall Color\n?@fig-FallLeaf is a modified version of “Fall Color,” using the color “black” instead of “burlywood3.”\nCredit: https://fronkonstin.com\n\n\nCode\n# Install packages\n\n# install.packages(\"gsubfn\")\n# install.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n  \n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"black\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\n\n\n\n\n\nFigure 4: black Color"
+  },
+  {
+    "objectID": "posts/EPPS6356 - 1/index.html#critique-on-a-chart-from-published-work",
+    "href": "posts/EPPS6356 - 1/index.html#critique-on-a-chart-from-published-work",
+    "title": "Assignment 1: Generative Art, Fall Leaf, and Chart Critique",
+    "section": "3. Critique on a chart from published work",
+    "text": "3. Critique on a chart from published work\nFigure 5 This chart by Eviction Lab displays eviction filings in Dallas County, TX from March 19, 2020, through the present. In addition to showing the number of weekly filings relative to the filings trend, it also shows the timing of eviction policy interventions. It is unclear how the filings trend is determined.\n\n\n\nFigure 5: Eviction Filings in Dallas County\n\n\nhttps://evictionlab.org/eviction-tracking/dallas-tx/"
+  },
+  {
+    "objectID": "posts/Assignment 1/index.html",
+    "href": "posts/Assignment 1/index.html",
+    "title": "Welcome To My Assignment Page",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Bienvenidos",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leonard Ayala",
+    "section": "",
+    "text": "This is my website."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Leonard Ayala",
+    "section": "",
+    "text": "I will graduate with my Masters in Economics this fall. I work on housing policy.\nEducation:\nExperience:"
+  },
+  {
+    "objectID": "R Markdown.html",
+    "href": "R Markdown.html",
+    "title": "R Markdown",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "R Markdown.html#including-plots",
+    "href": "R Markdown.html#including-plots",
+    "title": "R Markdown",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  }
+]
