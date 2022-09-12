@@ -1,8 +1,0 @@
----
-title: "Bienvenidos"
-author: "Leonard"
-date: "2022-09-10"
-categories: [news]
----
-
-This is the first post in a Quarto blog. Welcome!
