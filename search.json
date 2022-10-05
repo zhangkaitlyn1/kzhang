@@ -14,6 +14,27 @@
     "text": "My favorite color is pink."
   },
   {
+    "objectID": "As4.html#variable-width-column-chart",
+    "href": "As4.html#variable-width-column-chart",
+    "title": "Assignment 4",
+    "section": "1. Variable Width Column Chart",
+    "text": "1. Variable Width Column Chart\nHere we visualize the total number of COVID cases as of 2022-01-01 per continent or region. The width in the columns represents the number of countries within the specified continent or region. The height represents the total number of cases.\n\n\n\n\n\nTotal cases on Jan. 1, 2022, distributed by continent"
+  },
+  {
+    "objectID": "As4.html#table-with-embedded-charts",
+    "href": "As4.html#table-with-embedded-charts",
+    "title": "Assignment 4",
+    "section": "2. Table with Embedded Charts",
+    "text": "2. Table with Embedded Charts\nThis table visualizes the relationship between longitude and COVID cases over time. Each embedded table represents a different continent or region. We were interested in representing the data this way to investigate the possible influence of climate on COVID cases.\n\n\n\n\n\nTotal cases from January to June, 2022, distributed by continent"
+  },
+  {
+    "objectID": "As4.html#synergy-report",
+    "href": "As4.html#synergy-report",
+    "title": "Assignment 4",
+    "section": "Synergy Report",
+    "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Prattasha and Kaitlyn took the lead on the column chart. Bel took the lead on the animated table matrix. Leonard reviewed and merged all final codes to create our blog."
+  },
+  {
     "objectID": "assign01.html",
     "href": "assign01.html",
     "title": "Assignment 1: Generative Art, Fall Leaf, and Chart Critique",
@@ -33,6 +54,48 @@
     "title": "Assignment 1: Generative Art, Fall Leaf, and Chart Critique",
     "section": "3. Critique on a chart from published work",
     "text": "3. Critique on a chart from published work\nThis chart from Zillow Observed Rent Index and the US Bureau of Labor Statistics shows rent prices outpacing wages in recent years. It shows two lines of different colors, one to represent wages, one to represent rent prices. The chart shows that rent prices are increasing faster than wages, which shows the viewer that rent is becoming increasingly unaffordable.\nRent When Compared to Wages \nRent prices compared to wages\nhttps://www.stessa.com/blog/cities-wages-growing-faster-than-rents/"
+  },
+  {
+    "objectID": "assign02.html",
+    "href": "assign02.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Original: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\nChanging the pch changes the point style on the plot.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
+  },
+  {
+    "objectID": "assign02.html#happy-planet-index",
+    "href": "assign02.html#happy-planet-index",
+    "title": "Assignment 2",
+    "section": "Happy Planet Index",
+    "text": "Happy Planet Index\nlibrary(readr) library(tidyverse)\nHPI <- read_csv(“HPDS02.csv”) HPI <- as.data.frame(HPI)"
+  },
+  {
+    "objectID": "assign02.html#happy-planet-index-1",
+    "href": "assign02.html#happy-planet-index-1",
+    "title": "Assignment 2",
+    "section": "Happy Planet Index",
+    "text": "Happy Planet Index\nlibrary(readr) library(tidyverse)\nHPI <- read_csv(“HPDS02.csv”) HPI <- as.data.frame(HPI)"
+  },
+  {
+    "objectID": "assign04.html#variable-width-column-chart",
+    "href": "assign04.html#variable-width-column-chart",
+    "title": "Assignment 4",
+    "section": "1. Variable Width Column Chart",
+    "text": "1. Variable Width Column Chart\nHere we visualize the total number of COVID cases as of 2022-01-01 per continent or region. The width in the columns represents the number of countries within the specified continent or region. The height represents the total number of cases.\n\n\n\n\n\nTotal cases on Jan. 1, 2022, distributed by continent"
+  },
+  {
+    "objectID": "assign04.html#table-with-embedded-charts",
+    "href": "assign04.html#table-with-embedded-charts",
+    "title": "Assignment 4",
+    "section": "2. Table with Embedded Charts",
+    "text": "2. Table with Embedded Charts\nThis table visualizes the relationship between longitude and COVID cases over time. Each embedded table represents a different continent or region. We were interested in representing the data this way to investigate the possible influence of climate on COVID cases.\n\n\n\n\n\nTotal cases from January to June, 2022, distributed by continent"
+  },
+  {
+    "objectID": "assign04.html#synergy-report",
+    "href": "assign04.html#synergy-report",
+    "title": "Assignment 4",
+    "section": "Synergy Report",
+    "text": "Synergy Report\nOur team diligently collaborated to create these data visualizations. Prattasha and Kaitlyn took the lead on the column chart. Bel took the lead on the animated table matrix. Leonard reviewed and merged all final codes to create our blog."
   },
   {
     "objectID": "index.html",
