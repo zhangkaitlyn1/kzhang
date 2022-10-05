@@ -60,21 +60,7 @@
     "href": "assign02.html",
     "title": "Assignment 2",
     "section": "",
-    "text": "Original: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\nChanging the pch changes the point style on the plot.\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots"
-  },
-  {
-    "objectID": "assign02.html#happy-planet-index",
-    "href": "assign02.html#happy-planet-index",
-    "title": "Assignment 2",
-    "section": "Happy Planet Index",
-    "text": "Happy Planet Index\nlibrary(readr) library(tidyverse)\nHPI <- read_csv(“HPDS02.csv”) HPI <- as.data.frame(HPI)"
-  },
-  {
-    "objectID": "assign02.html#happy-planet-index-1",
-    "href": "assign02.html#happy-planet-index-1",
-    "title": "Assignment 2",
-    "section": "Happy Planet Index",
-    "text": "Happy Planet Index\nlibrary(readr) library(tidyverse)\nHPI <- read_csv(“HPDS02.csv”) HPI <- as.data.frame(HPI)"
+    "text": "Original: pch=16\n\n\n\n\n\n\n\npch=5\n\n\n\n\n\n\n\n\n\npch=10\n\n\n\n\n\n\n\npch=15\n\n\n\n\n\n\nPressure (mm Hg) versus Temperature (Celsius)\n\n\n\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\n\n\nBarplot\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nPersp\n\n\n\n\n\n\n\nPiechart\n\n\n\n\n\n\nMore Plots\n\n\n\n# 2. Happiness Index\n\n\n\n\n\n### This compares the happiness ranking with the USA and Australia from 2009 to 2019\n\n\n\n\n\n### This shows the frequency of each ranking"
   },
   {
     "objectID": "assign04.html#variable-width-column-chart",
