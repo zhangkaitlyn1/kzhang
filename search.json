@@ -7,13 +7,6 @@
     "text": "1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about2.html",
-    "href": "about2.html",
-    "title": "About",
-    "section": "",
-    "text": "My favorite color is pink."
-  },
-  {
     "objectID": "As4.html#variable-width-column-chart",
     "href": "As4.html#variable-width-column-chart",
     "title": "Assignment 4",
@@ -109,6 +102,6 @@
     "href": "index.html",
     "title": "Kaitlyn Zhang",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is Kaitlyn Zhang’s Website"
   }
 ]
